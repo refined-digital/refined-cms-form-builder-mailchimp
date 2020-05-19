@@ -18,5 +18,14 @@
     "psr-4": {
       "RefinedDigital\\FormBuilder\\Mailchimp\\": "src/"
     }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RefinedDigital\\FormBuilder\\Mailchimp\\Module\\Providers\\FormBuilderMailchimpServiceProvider"
+      ],
+      "aliases": {
+      }
+    }
   }
 }
