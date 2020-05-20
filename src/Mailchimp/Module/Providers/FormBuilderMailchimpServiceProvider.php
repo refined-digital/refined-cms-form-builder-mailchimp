@@ -1,6 +1,6 @@
 <?php
 
-namespace RefinedDigital\PaymentGateways\Stripe\Module\Providers;
+namespace RefinedDigital\FormBuilder\Mailchimp\Module\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
