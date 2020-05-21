@@ -19,20 +19,20 @@ class Process implements FormBuilderCallbackInterface {
         $firstName = '';
         $lastName = '';
 
-        if ($fields->Name) {
-            $name = explode(' ', $fields->Name);
+        if ($fields['Name']) {
+            $name = explode(' ', $fields['Name']);
             $firstName = $name[0];
             if (isset($name[1])) {
                 $lastName = $name[1];
             }
         }
 
-        if (isset($fields->{'First Name'}) && $fields->{'First Name'}) {
-            $firstName = $fields->{'First Name'};
+        if (isset($fields['First Name']) && $fields['First Name']) {
+            $firstName = $fields['First Name'];
         }
 
-        if (isset($fields->{'Last Name'}) && $fields->{'Last Name'}) {
-            $lastName = $fields->{'Last Name'};
+        if (isset($fields['Last Name']) && $fields['Last Name']) {
+            $lastName = $fields['Last Name'];
         }
 
         $mergeTags = [
@@ -40,6 +40,6 @@ class Process implements FormBuilderCallbackInterface {
             'LNAME' => $lastName
         ];
 
-        Newsletter::subscribeOrUpdate($fields->Email, $mergeTags);
+        Newsletter::subscribeOrUpdate($fields['Email'], $mergeTags);
     }
 }
