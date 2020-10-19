@@ -1,6 +1,6 @@
 <?php
 
-namespace RefinedDigital\FormBuilder\Mailchimp\Module\Classes;
+namespace RefinedDigital\Mailchimp\Module\Classes;
 
 use RefinedDigital\FormBuilder\Module\Contracts\FormBuilderCallbackInterface;
 use RefinedDigital\FormBuilder\Module\Http\Repositories\FormBuilderRepository;

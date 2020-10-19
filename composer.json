@@ -16,13 +16,13 @@
   ],
   "autoload": {
     "psr-4": {
-      "RefinedDigital\\FormBuilder\\Mailchimp\\": "src/"
+      "RefinedDigital\\Mailchimp\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "RefinedDigital\\FormBuilder\\Mailchimp\\Module\\Providers\\FormBuilderMailchimpServiceProvider"
+        "RefinedDigital\\Mailchimp\\Module\\Providers\\FormBuilderMailchimpServiceProvider"
       ],
       "aliases": {
       }

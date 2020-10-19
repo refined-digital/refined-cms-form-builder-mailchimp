@@ -1,6 +1,6 @@
 <?php
 
-namespace RefinedDigital\FormBuilder\Mailchimp\Module\Providers;
+namespace RefinedDigital\Mailchimp\Module\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
