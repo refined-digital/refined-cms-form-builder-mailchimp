@@ -3,8 +3,8 @@
   "description": "Mailchimp integration for Form Builder",
   "require": {
     "php": "^7.1.3",
-    "refineddigital/cms": "~1.0|dev-master",
-    "refineddigital/cms-form-builder": "~1.0|dev-master",
+    "refineddigital/cms": "^1.7|dev-master",
+    "refineddigital/cms-form-builder": "^1.0|dev-master",
     "spatie/laravel-newsletter": "^4.2.2"
   },
   "license": "MIT",
