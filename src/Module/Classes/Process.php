@@ -35,6 +35,8 @@ class Process implements FormBuilderCallbackInterface {
             }
         }
 
-        Newsletter::subscribeOrUpdate($fields['EMAIL'], $fields);
+        $options = config('mailchimp.options') ?? [];
+
+        Newsletter::subscribeOrUpdate($fields['EMAIL'], $fields, '', $options);
     }
 }

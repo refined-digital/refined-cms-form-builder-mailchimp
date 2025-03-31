@@ -13,6 +13,11 @@ class FormBuilderMailchimpServiceProvider extends ServiceProvider
  */
     public function boot()
     {
+
+        $this->publishes([
+            __DIR__.'/../Config/mailchimp.php' => config_path('mailchimp.php'),
+        ], 'mailchimp');
+
         try {
             if ($this->app->runningInConsole()) {
                 if (\DB::connection()->getDatabaseName() && !file_exists(config_path('newsletter.php'))) {
